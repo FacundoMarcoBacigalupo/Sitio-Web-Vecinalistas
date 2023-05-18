@@ -1,0 +1,420 @@
+                                            //Hoja de estilos SCSS
+//Tipografias
+$font: Arial, Helvetica, sans-serif;
+
+
+//Colores
+$color1:#444444;
+$color2:#e9e5e5;
+$color3:#202020;
+$color4:#444949;
+
+
+//Bordes
+    $borde_abajo: 2px solid $color2;
+    $borde: 10px solid;
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: $color2;
+    background-image: linear-gradient(123deg, $color2 70%, $color2);
+    color: $color1;
+    font-family: $font;
+    &::-webkit-scrollbar{
+        width: 10px;
+    }
+    &::-webkit-scrollbar-track{
+        background-color: $color3;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: $color1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+                                                                /*Pagina inicio*/
+#inicio{
+    border-bottom: $borde_abajo;
+}
+
+            //Estas listo
+#estas{
+    background-image: url(../Imagenes/Vecinalista5.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 500px;
+    margin-bottom: 0;
+    border-radius: 0;
+    text-shadow: 50px 50px 50px $color3;
+    color: $color2;
+}
+            //Fin estas listo
+
+
+
+
+
+
+            //Redes Sociales
+#redesHome{
+    text-align: center;
+    margin: 20px;
+}
+
+.redesSocialesHome{
+    font-style: italic;
+    font-size: 50px;
+    font-weight: bold;
+    color: $color3;
+    &::first-letter{
+        font-size: 55px;
+    }
+}
+
+.fotosRedesHome img{
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    &:hover{
+        scale: 0.8;
+        transition: all 1s;
+    }
+    &:active{
+        scale: 0.8;
+        transition: all 1s;
+    }
+}
+            //Fin Redes Sociales
+
+
+
+
+
+            //Por que votarnos
+#votarnosHome{
+    color: $color3;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    h2{
+        font-size: 50px;
+        font-weight: bold;
+    }
+    h2::first-letter{
+        font-size: 55px;
+    }
+    p{
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 100px;
+    }
+}
+
+            //Fin Por que votarnos
+
+
+
+
+
+
+            //Efecto infinito
+.marquee {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.marquee li img{
+    width: 400px;
+    margin: 5px; 
+}
+
+
+.marquee__content {
+    display: flex;
+    list-style: none;
+    animation: scrolling 40s linear infinite;
+}
+
+.marquee__item img{
+    flex-shrink: 0;
+}
+
+@keyframes scrolling {
+    0% { transform: translateX(0)}
+
+    100% { transform: translateX(-270%)}
+}
+            //Fin efecto infinito
+                                                                /*Fin pagina inicio*/
+
+
+
+
+
+
+
+
+
+
+                                                                /*Pagina historia*/
+#historia{
+    border-bottom: $borde_abajo;
+}
+
+.espacios{
+    margin-top: 60px;
+}
+
+
+#mainEstilos{
+    text-align: center;
+    color: $color3;
+    margin: 20px;
+    h1{
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 20px;
+        margin-bottom: 100px;
+    }
+}
+
+
+.posicion img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.posicionImgHistoria{
+    display: flex;
+    img{
+        height: 400px;
+        width: 100%;
+        padding: 10px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+
+
+
+
+#ubicacionHistoria{
+    text-align: center;
+    color: $color3;
+    margin: 20px;
+    h2{
+        font-size: 50px;
+        font-weight: bold;
+    }
+    h4{
+        text-align: left;
+        font-weight: bold;
+    }
+}
+                                                                /*Fin pagina historia*/
+
+
+
+
+
+
+
+
+
+                                                                /*Pagina blog*/
+#blog{
+    border-bottom: $borde_abajo;
+}
+
+
+#containerBlog{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "ultimosArticulos camp2021"
+        "ultimosArticulos camp2021"
+        "art2 art2";
+    
+    grid-gap: 50px;
+    margin: 20px;
+    font-family: $font;
+}
+
+
+
+
+.ultimosArticulos{
+    grid-area: ultimosArticulos;
+    padding: 10px;
+    background-color: $color2;
+    box-shadow: 0px 5px 30px $color4;
+    border-radius: 10px;
+    color: $color3;
+    margin-bottom: 50px;
+    text-align: center;
+    h2{
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    a{
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    a:hover{
+        color: $color3;
+    }
+}
+
+
+
+.articulosBlog{
+    padding: 10px;
+    background-color: $color3;
+    box-shadow: 0px 5px 30px $color4;
+    border-radius: 10px;
+    color: $color2;
+    margin-bottom: 50px;
+    img{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    p{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    p::first-letter{
+        font-size: 30px;
+    }
+
+    footer{
+        text-align: center;
+    }
+}
+
+
+
+
+.camp2021{
+    grid-area: camp2021;
+}
+.art2{
+    grid-area: art2;
+}
+
+.estilosCambioPagination{
+    a{
+        background-color: $color3;
+    }
+    a:hover{
+        background-color: $color4;
+    }
+    a:active{
+        scale: .8;
+        transition: all 0.2s;
+    }
+}
+                                                                /*Fin pagina blog*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        /**/
+@media (max-width: 800px){
+                                                                /*Pagina historia*/
+    .posicionImgHistoria{
+        display: flex;
+        flex-wrap: wrap;
+        img{
+            height: 300px;
+            width: 100%;
+            padding-top: 10px
+        }
+    }
+                                                                /*Fin pagina historia*/
+}
+
+
+
+
+
+
+
+
+@import "_menu";
+@import "_footer";
+@import "_botones";

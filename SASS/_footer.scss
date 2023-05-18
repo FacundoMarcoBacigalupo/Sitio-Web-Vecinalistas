@@ -1,0 +1,104 @@
+                                                        /*Pie de pagina*/
+footer{
+    background-color: $color3;
+    color: $color2;
+    padding: 10px;
+}
+
+.footerPuerto{
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+            /*Fotos redes sociales*/
+#redes {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+#tiktok{
+    img{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+    &:hover{
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        filter: grayscale(100%);
+        transition: 1.1s;
+    }
+}
+
+
+
+
+#ig{
+    img{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+    &:hover{
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        filter: grayscale(100%);
+        transition: 1.1s;
+    }
+}
+
+
+
+
+#fb{
+    img{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    &:hover{
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        filter: grayscale(100%);
+        transition: 1.1s;
+    }
+}
+            /*Fin fotos redes sociales*/
+
+
+
+
+#copyright{
+        padding: 5px 5px;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+        display: block;
+}
+
+
+            /*Boton de subir*/
+.up{
+    img{
+        height: 42px;
+        width: 30px;
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+    }
+    :active{
+        scale: 0.8;
+        transition: all .2s
+    }
+}
+            /*Fin boton de subir*/
