@@ -4,14 +4,14 @@ $font: Arial, Helvetica, sans-serif;
 
 
 //Colores
-$color1:#444444;
-$color2:#e9e5e5;
-$color3:#202020;
-$color4:#444949;
+$color1:#A3BF3F;
+$color2:#F2F2F2;
+$color3:#0D0C0C;
+$color4:#04B2D9;
 
 
 //Bordes
-    $borde_abajo: 2px solid $color2;
+    $borde_abajo: 2px solid $color1;
     $borde: 10px solid;
 
 
@@ -30,6 +30,7 @@ $color4:#444949;
     list-style: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    text-decoration: none;
 }
 
 
@@ -288,7 +289,7 @@ body{
     grid-area: ultimosArticulos;
     padding: 10px;
     background-color: $color2;
-    box-shadow: 0px 5px 30px $color4;
+    box-shadow: 0px 5px 30px $color3;
     border-radius: 10px;
     color: $color3;
     margin-bottom: 50px;
@@ -315,7 +316,7 @@ body{
 .articulosBlog{
     padding: 10px;
     background-color: $color3;
-    box-shadow: 0px 5px 30px $color4;
+    box-shadow: 0px 5px 30px $color3;
     border-radius: 10px;
     color: $color2;
     margin-bottom: 50px;
@@ -360,12 +361,20 @@ body{
         background-color: $color3;
     }
     a:hover{
-        background-color: $color4;
+        background-color: $color3;
     }
     a:active{
         scale: .8;
         transition: all 0.2s;
     }
+}
+
+.botonesMoves{
+    width: 110px;
+}
+
+.activeColor{
+        background-color: $color1 !important;
 }
                                                                 /*Fin pagina blog*/
 
@@ -413,8 +422,33 @@ body{
 
 
 
+@media (max-width: 500px){
+                                                                /*Pagina blog*/
+#containerBlog{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "ultimosArticulos"
+        "camp2021"
+        "art2";
+    
+    grid-gap: 50px;
+    margin: 20px;
+    font-family: $font;
+}
+                                                                /*Fin pagina blog*/
+}
+
+
+
+
+
+
+
 
 
 @import "_menu";
 @import "_footer";
 @import "_botones";
+@import "_botonSubir";

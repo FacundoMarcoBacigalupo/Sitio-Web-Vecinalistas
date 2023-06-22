@@ -5,27 +5,28 @@
   list-style: none;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 body {
-  background-color: #e9e5e5;
-  background-image: linear-gradient(123deg, #e9e5e5 70%, #e9e5e5);
-  color: #444444;
+  background-color: #F2F2F2;
+  background-image: linear-gradient(123deg, #F2F2F2 70%, #F2F2F2);
+  color: #A3BF3F;
   font-family: Arial, Helvetica, sans-serif;
 }
 body::-webkit-scrollbar {
   width: 10px;
 }
 body::-webkit-scrollbar-track {
-  background-color: #202020;
+  background-color: #0D0C0C;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #444444;
+  background-color: #A3BF3F;
 }
 
 /*Pagina inicio*/
 #inicio {
-  border-bottom: 2px solid #e9e5e5;
+  border-bottom: 2px solid #A3BF3F;
 }
 
 #estas {
@@ -36,8 +37,8 @@ body::-webkit-scrollbar-thumb {
   height: 500px;
   margin-bottom: 0;
   border-radius: 0;
-  text-shadow: 50px 50px 50px #202020;
-  color: #e9e5e5;
+  text-shadow: 50px 50px 50px #0D0C0C;
+  color: #F2F2F2;
 }
 
 #redesHome {
@@ -49,7 +50,7 @@ body::-webkit-scrollbar-thumb {
   font-style: italic;
   font-size: 50px;
   font-weight: bold;
-  color: #202020;
+  color: #0D0C0C;
 }
 .redesSocialesHome::first-letter {
   font-size: 55px;
@@ -71,7 +72,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #votarnosHome {
-  color: #202020;
+  color: #0D0C0C;
   margin-top: 100px;
   margin-left: 20px;
   margin-right: 20px;
@@ -125,7 +126,7 @@ body::-webkit-scrollbar-thumb {
 /*Fin pagina inicio*/
 /*Pagina historia*/
 #historia {
-  border-bottom: 2px solid #e9e5e5;
+  border-bottom: 2px solid #A3BF3F;
 }
 
 .espacios {
@@ -134,7 +135,7 @@ body::-webkit-scrollbar-thumb {
 
 #mainEstilos {
   text-align: center;
-  color: #202020;
+  color: #0D0C0C;
   margin: 20px;
 }
 #mainEstilos h1 {
@@ -171,7 +172,7 @@ body::-webkit-scrollbar-thumb {
 
 #ubicacionHistoria {
   text-align: center;
-  color: #202020;
+  color: #0D0C0C;
   margin: 20px;
 }
 #ubicacionHistoria h2 {
@@ -186,7 +187,7 @@ body::-webkit-scrollbar-thumb {
 /*Fin pagina historia*/
 /*Pagina blog*/
 #blog {
-  border-bottom: 2px solid #e9e5e5;
+  border-bottom: 2px solid #A3BF3F;
 }
 
 #containerBlog {
@@ -202,10 +203,10 @@ body::-webkit-scrollbar-thumb {
 .ultimosArticulos {
   grid-area: ultimosArticulos;
   padding: 10px;
-  background-color: #e9e5e5;
-  box-shadow: 0px 5px 30px #444949;
+  background-color: #F2F2F2;
+  box-shadow: 0px 5px 30px #0D0C0C;
   border-radius: 10px;
-  color: #202020;
+  color: #0D0C0C;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -221,15 +222,15 @@ body::-webkit-scrollbar-thumb {
   font-weight: 500;
 }
 .ultimosArticulos a:hover {
-  color: #202020;
+  color: #0D0C0C;
 }
 
 .articulosBlog {
   padding: 10px;
-  background-color: #202020;
-  box-shadow: 0px 5px 30px #444949;
+  background-color: #0D0C0C;
+  box-shadow: 0px 5px 30px #0D0C0C;
   border-radius: 10px;
-  color: #e9e5e5;
+  color: #F2F2F2;
   margin-bottom: 50px;
 }
 .articulosBlog img {
@@ -265,14 +266,22 @@ body::-webkit-scrollbar-thumb {
 }
 
 .estilosCambioPagination a {
-  background-color: #202020;
+  background-color: #0D0C0C;
 }
 .estilosCambioPagination a:hover {
-  background-color: #444949;
+  background-color: #0D0C0C;
 }
 .estilosCambioPagination a:active {
   scale: 0.8;
   transition: all 0.2s;
+}
+
+.botonesMoves {
+  width: 110px;
+}
+
+.activeColor {
+  background-color: #A3BF3F !important;
 }
 
 /*Fin pagina blog*/
@@ -290,25 +299,28 @@ body::-webkit-scrollbar-thumb {
   }
   /*Fin pagina historia*/
 }
+@media (max-width: 500px) {
+  /*Pagina blog*/
+  #containerBlog {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: "ultimosArticulos" "camp2021" "art2";
+    grid-gap: 50px;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /*Fin pagina blog*/
+}
 .menuBar img {
   width: 30px;
   height: 30px;
 }
 
 .navbar-toggler {
-  color: #e9e5e5;
+  color: #0D0C0C;
   border-color: transparent;
   transition: all 2s;
-}
-
-.navbarColor {
-  background-color: #202020;
-}
-.navbarColor:hover {
-  background-image: linear-gradient(to right, #444444 51%, #202020 100%);
-}
-.navbarColor a {
-  color: #444444;
 }
 
 .logo {
@@ -334,9 +346,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 nav {
-  background-color: #202020;
+  background-color: #04B2D9;
 }
 
+.efecto {
+  color: #0D0C0C !important;
+}
 .efecto:active {
   scale: 0.8;
   transition: all 0.8s;
@@ -347,7 +362,7 @@ nav {
   content: "";
   height: 3px;
   width: 0;
-  background-color: #e9e5e5;
+  background-color: #A3BF3F;
   display: block;
   transition: all 0.5s;
 }
@@ -356,78 +371,137 @@ nav {
   width: 80%;
 }
 
-/*Pie de pagina*/
-footer {
-  background-color: #202020;
-  color: #e9e5e5;
-  padding: 10px;
+.containerFooter {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "fotoFooter redesFooter redesFooter" "fotoFooter redesFooter redesFooter" "copyrightFooter copyrightFooter copyrightFooter";
+  padding: 20px;
+  background-color: #04B2D9;
+  color: #0D0C0C;
 }
 
-.footerPuerto {
+.fotoFooter {
+  grid-area: fotoFooter;
+  border-radius: 60px;
+  height: 200px;
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.puertoFooter {
   font-size: 20px;
-  margin-bottom: 0;
-  font-weight: 400;
+  margin: 20px;
+  font-weight: 600;
 }
 
-/*Fotos redes sociales*/
-#redes {
+.redesFooter {
+  grid-area: redesFooter;
   display: flex;
   padding-top: 10px;
   padding-left: 10px;
   margin-bottom: 20px;
 }
 
-#tiktok img {
-  width: 50px;
-  height: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
-  margin-right: 10px;
-}
-#tiktok:hover {
-  transform: scale(0.9);
-  filter: grayscale(100%);
-  transition: 1.1s;
-}
-
 #ig img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 10px;
   margin-right: 10px;
+  border-radius: 10px;
 }
 #ig:hover {
   transform: scale(0.9);
-  filter: grayscale(100%);
   transition: 1.1s;
 }
 
 #fb img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
 #fb:hover {
   transform: scale(0.9);
-  filter: grayscale(100%);
   transition: 1.1s;
 }
 
-/*Fin fotos redes sociales*/
-#copyright {
+.copyrightFooter {
+  grid-area: copyrightFooter;
   padding: 5px 5px;
-  font-size: 12px;
-  font-weight: 400;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
   text-align: center;
-  display: block;
 }
 
-/*Boton de subir*/
+@media (max-width: 900px) {
+  .containerFooter {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: "fotoFooter redesFooter" "fotoFooter redesFooter" "fotoFooter redesFooter" "copyrightFooter copyrightFooter";
+    grid-gap: 40px;
+    background-color: #04B2D9;
+    color: #0D0C0C;
+  }
+  .fotoFooter {
+    grid-area: fotoFooter;
+    border-radius: 20px;
+    height: 200px;
+    width: 100%;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+@media (max-width: 600px) {
+  .containerFooter {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: "fotoFooter" "redesFooter" "redesFooter" "copyrightFooter";
+    grid-gap: 40px;
+    background-color: #04B2D9;
+    color: #0D0C0C;
+  }
+  .fotoFooter {
+    grid-area: fotoFooter;
+    border-radius: 20px;
+    height: 200px;
+  }
+}
+button[type=submit] {
+  background-image: linear-gradient(to right, #0D0C0C 0%, #04B2D9 51%, #0D0C0C 100%);
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  background-size: 200% auto;
+  color: #0D0C0C;
+  border-radius: 20px;
+  border: 0;
+}
+button[type=submit]:hover {
+  background-position: right center;
+  color: #0D0C0C;
+  text-decoration: none;
+  transition: all 0.9s;
+}
+button[type=submit]:active {
+  scale: 0.8;
+  transition: all 0.4s;
+}
+button[type=submit] a {
+  text-decoration: none;
+  color: #0D0C0C;
+  font-weight: bold;
+}
+
 .up img {
   height: 42px;
   width: 30px;
@@ -438,28 +512,4 @@ footer {
 .up :active {
   scale: 0.8;
   transition: all 0.2s;
-}
-
-/*Fin boton de subir*/
-button[type=submit] {
-  background-image: linear-gradient(to right, #202020 0%, #444949 51%, #202020 100%);
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  background-size: 200% auto;
-  color: #e9e5e5;
-  box-shadow: 0 0 10px #444949;
-  border-radius: 20px;
-  border: 0;
-}
-button[type=submit]:hover {
-  background-position: right center;
-  color: #e9e5e5;
-  text-decoration: none;
-  transition: all 0.9s;
-}
-button[type=submit]:active {
-  scale: 0.8;
-  transition: all 0.8s;
 }/*# sourceMappingURL=Estilos.css.map */
