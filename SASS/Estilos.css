@@ -339,6 +339,11 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.9s;
 }
 
+.logo:hover {
+  filter: drop-shadow(0px 2px 3px #141414);
+  transition: all 0.5s;
+}
+
 .barraNav {
   justify-content: end;
   text-align: center;
@@ -392,6 +397,11 @@ nav {
      object-position: center;
 }
 
+.fotoFooter:hover {
+  filter: drop-shadow(0px 2px 3px #141414);
+  transition: all 0.5s;
+}
+
 .puertoFooter {
   font-size: 20px;
   margin: 20px;
@@ -406,7 +416,7 @@ nav {
   margin-bottom: 20px;
 }
 
-#ig img {
+.ig img {
   width: 60px;
   height: 60px;
   -o-object-fit: cover;
@@ -414,7 +424,7 @@ nav {
   margin-right: 10px;
   border-radius: 10px;
 }
-#ig:hover {
+.ig:hover {
   transform: scale(0.9);
   transition: 1.1s;
 }
@@ -459,7 +469,7 @@ nav {
        object-position: center;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .containerFooter {
     display: grid;
     grid-template-rows: auto;
@@ -473,6 +483,25 @@ nav {
     grid-area: fotoFooter;
     border-radius: 20px;
     height: 200px;
+  }
+}
+@media (max-width: 400px) {
+  .containerFooter {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: "fotoFooter" "redesFooter" "redesFooter" "copyrightFooter";
+    grid-gap: 40px;
+    background-color: #04B2D9;
+    color: #0D0C0C;
+  }
+  .ig img {
+    width: 50px;
+    height: 50px;
+  }
+  #fb img {
+    width: 50px;
+    height: 50px;
   }
 }
 button[type=submit] {

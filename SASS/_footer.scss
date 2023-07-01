@@ -23,6 +23,11 @@
     object-position: center;
 }
 
+.fotoFooter:hover{
+    filter: drop-shadow(0px 2px 3px #141414);
+    transition: all .5s
+}
+
 .puertoFooter{
     font-size: 20px;
     margin: 20px;
@@ -40,7 +45,7 @@
 }
 
 
-#ig{
+.ig{
     img{
         width: 60px;
         height: 60px;
@@ -131,7 +136,7 @@
 
 
 
-@media (max-width: 600px){
+@media (max-width: 800px){
     .containerFooter{
         display: grid;
         grid-template-rows: auto;
@@ -153,5 +158,46 @@
         grid-area: fotoFooter;
         border-radius: 20px;
         height: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 400px){
+    .containerFooter{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        
+        grid-template-areas:
+            "fotoFooter"
+            "redesFooter"
+            "redesFooter"
+            "copyrightFooter";
+        
+        grid-gap: 40px;
+        background-color: $color4;
+        color: $color3;
+    }
+
+
+    .ig{
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+
+    #fb{
+        img{
+            width: 50px;
+            height: 50px;
+        }
     }
 }

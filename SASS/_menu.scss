@@ -1,15 +1,15 @@
                                                         //Menu
-
             //Barra de navegacion
 .menuBar img{
     width: 30px;
     height: 30px;
 }
 
+
 .navbar-toggler{
     color: $color3;
     border-color: transparent;
-    transition: all 2s;
+    transition: all 2s
 }
 
 
@@ -27,15 +27,20 @@
     }
 }
 
+.logo:hover{
+    filter: drop-shadow(0px 2px 3px #141414);
+    transition: all .5s
+}
+
 
 .barraNav{
     justify-content: end;
     text-align: center;
-    padding: 10px;
+    padding: 10px
 }
 
 nav{
-    background-color: $color4;
+    background-color: $color4
 }
 
 
