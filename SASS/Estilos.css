@@ -285,7 +285,44 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*Fin pagina blog*/
-/**/
+/*pagina articulos*/
+.containerMain {
+  text-align: center;
+  font-weight: bold;
+  color: #0D0C0C;
+}
+.containerMain h1 {
+  font-size: 40px;
+  margin: 20px;
+}
+.containerMain img {
+  height: 300px;
+  width: 100%;
+}
+
+.containerComo {
+  margin-top: 50px;
+  text-align: center;
+  color: #0D0C0C;
+}
+.containerComo h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+.containerComo h2::first-letter {
+  font-size: 40px;
+}
+.containerComo p {
+  margin: 10px;
+  font-size: 17px;
+}
+.containerComo img {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+/*Fin pagina articulos*/
 @media (max-width: 800px) {
   /*Pagina historia*/
   .posicionImgHistoria {
@@ -312,15 +349,70 @@ body::-webkit-scrollbar-thumb {
   }
   /*Fin pagina blog*/
 }
-.menuBar img {
-  width: 30px;
-  height: 30px;
+@media (max-width: 600px) {
+  /*Pagina inicio*/
+  .redesSocialesHome {
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0D0C0C;
+  }
+  .redesSocialesHome::first-letter {
+    font-size: 40px;
+  }
+  .fotosRedesHome img {
+    height: 80px;
+    width: 80px;
+  }
+  #votarnosHome h2 {
+    font-size: 30px;
+  }
+  #votarnosHome h2::first-letter {
+    font-size: 40px;
+  }
+  #votarnosHome p {
+    font-size: 16px;
+  }
+  /*Fin pagina inicio*/
+  /*Pagina historia*/
+  #mainEstilos {
+    text-align: center;
+    color: #0D0C0C;
+    margin: 20px;
+  }
+  #mainEstilos h1 {
+    font-size: 35px;
+  }
+  #mainEstilos p {
+    font-size: 16px;
+  }
+  #ubicacionHistoria h2 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+  /*Fin pagina historia*/
+  /*Pagina blog*/
+  .articulosBlog h2 {
+    font-size: 35px;
+  }
+  .articulosBlog p {
+    font-size: 17px;
+  }
+  .articulosBlog p::first-letter {
+    font-size: 25px;
+  }
+  .ultimosArticulos h2 {
+    font-size: 30px;
+  }
+  .ultimosArticulos a {
+    font-size: 17px;
+  }
+  /*Fin pagina blog*/
 }
-
-.navbar-toggler {
-  color: #0D0C0C;
-  border-color: transparent;
-  transition: all 2s;
+.navbar-img {
+  height: 30px;
+  width: 30px;
+  border-color: transparent !important;
 }
 
 .logo {

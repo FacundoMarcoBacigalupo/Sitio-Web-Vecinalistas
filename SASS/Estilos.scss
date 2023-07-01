@@ -379,6 +379,48 @@ body{
                                                                 /*Fin pagina blog*/
 
 
+                                                                /*pagina articulos*/
+.containerMain{
+    text-align: center;
+    font-weight: bold;
+    color: $color3;
+
+    h1{
+        font-size: 40px;
+        margin: 20px;
+    }
+
+    img{
+        height: 300px;
+        width: 100%;
+    }
+}
+
+.containerComo{
+    margin-top: 50px;
+    text-align: center;
+    color: $color3;
+
+    h2{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    h2::first-letter{
+        font-size: 40px;
+    }
+
+    p{
+        margin: 10px;
+        font-size: 17px;
+    }
+
+    img{
+        height: 200px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+                                                                /*Fin pagina articulos*/
 
 
 
@@ -402,7 +444,8 @@ body{
 
 
 
-                        /**/
+
+
 @media (max-width: 800px){
                                                                 /*Pagina historia*/
     .posicionImgHistoria{
@@ -437,9 +480,92 @@ body{
     margin: 20px;
     font-family: $font;
 }
-                                                                /*Fin pagina blog*/
+                                                            /*Fin pagina blog*/
 }
 
+
+
+@media (max-width: 600px){
+                                                            /*Pagina inicio*/
+.redesSocialesHome{
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    color: $color3;
+    &::first-letter{
+        font-size: 40px;
+    }
+}
+
+
+.fotosRedesHome img{
+    height: 80px;
+    width: 80px;
+}
+
+
+#votarnosHome{
+    h2{
+        font-size: 30px;
+    }
+    h2::first-letter{
+        font-size: 40px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+                                                            /*Fin pagina inicio*/
+
+
+                                                            /*Pagina historia*/
+#mainEstilos{
+    text-align: center;
+    color: $color3;
+    margin: 20px;
+    h1{
+        font-size: 35px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+
+
+#ubicacionHistoria{
+    h2{
+        font-size: 35px;
+        font-weight: bold;
+    }
+}
+                                                            /*Fin pagina historia*/
+
+
+                                                                /*Pagina blog*/
+.articulosBlog{
+    h2{
+        font-size: 35px;
+    }
+
+    p{
+        font-size: 17px;
+    }
+    p::first-letter{
+        font-size: 25px;
+    }
+}
+
+.ultimosArticulos{
+    h2{
+        font-size: 30px;
+    }
+
+    a{
+        font-size: 17px;
+    }
+}
+                                                                /*Fin pagina blog*/
+}
 
 
 

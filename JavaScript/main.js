@@ -3,7 +3,7 @@ let tituloPrevio = document.title
 
 window.addEventListener("blur", () => {
     tituloPrevio = document.title
-    document.title = "¡Vota a Vecinalista!"
+    document.title = "¡Votanos!"
 })
 
 
